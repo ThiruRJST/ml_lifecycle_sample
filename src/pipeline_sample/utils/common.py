@@ -39,12 +39,13 @@ def read_yaml(yaml_filepath: Path) -> ConfigBox:
 
 
 @ensure_annotations
-def create_directories(paths_to_directories: list, verbose=True) -> None:
+def create_directories(paths_to_directories: list, verbose=True):
     """Create directories
 
     Args:
         paths_to_directories (list): list of paths to directories
-        verbose (bool, optional): Whether to show a message or not, Ignore if multiple directories are created. Defaults to True.
+        verbose (bool, optional): Whether to show a message or not
+        Ignore if multiple directories are created. Defaults to True.
     """
 
     for directory in paths_to_directories:
@@ -53,7 +54,7 @@ def create_directories(paths_to_directories: list, verbose=True) -> None:
             logger.info(f"Directory created: {directory}")
 
 @ensure_annotations
-def save_json(save_path:Path, data: dict) -> None:
+def save_json(save_path:Path, data: dict):
     """save to data to json file
 
     Args:
@@ -81,7 +82,7 @@ def load_json(path: Path):
     logger.info(f"Data loaded from json file: {path}")
 
 @ensure_annotations
-def save_bin(data: Any, save_path: Path) -> None:
+def save_bin(data: Any, save_path: Path):
     """save binary file data
 
     Args:

@@ -1,1 +1,64 @@
 [2025-01-29 08:20:07,890: INFO: main: Sample message using logger]
+[2025-01-29 14:54:06,585: INFO: common: YAML file laoded successfully: config/config.yaml]
+[2025-01-29 14:54:06,599: INFO: common: YAML file laoded successfully: params.yaml]
+[2025-01-29 14:54:06,605: ERROR: 814460384: Failed to download file with error: YAML file is empty: params.yaml]
+[2025-01-29 14:54:29,166: INFO: common: YAML file laoded successfully: config/config.yaml]
+[2025-01-29 14:54:29,167: INFO: common: YAML file laoded successfully: params.yaml]
+[2025-01-29 14:54:29,169: INFO: common: YAML file laoded successfully: schema.yaml]
+[2025-01-29 14:54:29,169: ERROR: 814460384: Failed to download file with error: Argument paths_to_directories of type <class 'str'> to <function create_directories at 0x7f8ae00fdf30> does not match annotation type <class 'list'>]
+[2025-01-29 14:55:42,232: INFO: common: YAML file laoded successfully: config/config.yaml]
+[2025-01-29 14:55:42,234: INFO: common: YAML file laoded successfully: params.yaml]
+[2025-01-29 14:55:42,234: INFO: common: YAML file laoded successfully: schema.yaml]
+[2025-01-29 14:55:42,247: INFO: common: Directory created: artifacts]
+[2025-01-29 14:55:42,248: ERROR: 814460384: Failed to download file with error: isinstance() arg 2 must be a type, a tuple of types, or a union]
+[2025-01-29 14:57:05,019: INFO: common: YAML file laoded successfully: config/config.yaml]
+[2025-01-29 14:57:05,021: INFO: common: YAML file laoded successfully: params.yaml]
+[2025-01-29 14:57:05,023: INFO: common: YAML file laoded successfully: schema.yaml]
+[2025-01-29 14:57:05,025: INFO: common: Directory created: artifacts]
+[2025-01-29 14:57:05,025: ERROR: 814460384: Failed to download file with error: isinstance() arg 2 must be a type, a tuple of types, or a union]
+[2025-01-29 14:58:50,675: INFO: common: YAML file laoded successfully: config/config.yaml]
+[2025-01-29 14:58:50,676: INFO: common: YAML file laoded successfully: params.yaml]
+[2025-01-29 14:58:50,677: INFO: common: YAML file laoded successfully: schema.yaml]
+[2025-01-29 14:58:50,678: INFO: common: Directory created: artifacts]
+[2025-01-29 14:58:50,678: ERROR: 814460384: Failed to download file with error: isinstance() arg 2 must be a type, a tuple of types, or a union]
+[2025-01-29 14:59:50,847: INFO: common: YAML file laoded successfully: config/config.yaml]
+[2025-01-29 14:59:50,850: INFO: common: YAML file laoded successfully: params.yaml]
+[2025-01-29 14:59:50,851: INFO: common: YAML file laoded successfully: schema.yaml]
+[2025-01-29 14:59:50,852: INFO: common: Directory created: artifacts]
+[2025-01-29 14:59:50,853: ERROR: 814460384: Failed to download file with error: isinstance() arg 2 must be a type, a tuple of types, or a union]
+[2025-01-29 15:02:33,878: INFO: common: YAML file laoded successfully: config/config.yaml]
+[2025-01-29 15:02:33,880: INFO: common: YAML file laoded successfully: params.yaml]
+[2025-01-29 15:02:33,881: INFO: common: YAML file laoded successfully: schema.yaml]
+[2025-01-29 15:02:33,882: INFO: common: Directory created: artifacts]
+[2025-01-29 15:02:34,497: ERROR: 814460384: Failed to download file with error: [Errno 2] No such file or directory: 'artifacts/data_ingestion/wine-quality.csv']
+[2025-01-29 15:05:59,512: INFO: common: YAML file laoded successfully: config/config.yaml]
+[2025-01-29 15:05:59,514: INFO: common: YAML file laoded successfully: params.yaml]
+[2025-01-29 15:05:59,515: INFO: common: YAML file laoded successfully: schema.yaml]
+[2025-01-29 15:05:59,518: INFO: common: Directory created: artifacts]
+[2025-01-29 15:05:59,519: INFO: common: Directory created: artifacts/data_ingestion]
+[2025-01-29 15:05:59,718: INFO: 2054374211: Downloaded file from https://raw.githubusercontent.com/mlflow/mlflow-example/refs/heads/master/wine-quality.csv with informations: Connection: close
+Content-Length: 264426
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: text/plain; charset=utf-8
+ETag: "b59f798118e63a6fe2399f503b5411c00a46fb511fc74357511ef218d79f7186"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: B7AD:2845BF:E2F5E:1457EF:6799F5B2
+Accept-Ranges: bytes
+Date: Wed, 29 Jan 2025 09:35:59 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100021-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1738143360.955980,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 12ae5088aeb94efe98bd486f29f27cb07bff7a4c
+Expires: Wed, 29 Jan 2025 09:40:59 GMT
+Source-Age: 205
+
+ to artifacts/data_ingestion/wine-quality.csv]
