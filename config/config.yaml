@@ -9,3 +9,7 @@ data_validation:
   root_dir: "artifacts/data_validation"
   data_file: "artifacts/data_ingestion/wine-quality.csv"
   status_file: "artifacts/data_validation/status.json"
+
+data_transformation:
+  root_dir: "artifacts/data_transformation"
+  data_file: "artifacts/data_ingestion/wine-quality.csv"

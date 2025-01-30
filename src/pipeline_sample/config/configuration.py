@@ -1,5 +1,5 @@
 from src.pipeline_sample.constants import *
-from src.pipeline_sample.entity.config_entity import (DataIngestionConfig, DataValidationConfig)
+from src.pipeline_sample.entity.config_entity import (DataIngestionConfig, DataValidationConfig, DataTransformationConfig)
 from src.pipeline_sample.utils.common import read_yaml, create_directories
 
 
@@ -41,3 +41,18 @@ class ConfigurationManager:
         )
         
         return data_validation_config
+    
+    
+    def get_data_transformation_config(self) -> DataTransformationConfig:
+        
+        status_file_path = self.config.data_validation.status_file
+        config = self.config.data_transformation
+        create_directories([config.root_dir])
+        
+        data_transformation_config = DataTransformationConfig(
+            root_dir=Path(config.root_dir),
+            data_file=Path(config.data_file),
+            status_file=Path(status_file_path)
+        )
+        
+        return data_transformation_config
