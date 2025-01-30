@@ -4,3 +4,8 @@ data_ingestion:
   root_dir: "artifacts/data_ingestion"
   source_URL: https://raw.githubusercontent.com/mlflow/mlflow-example/refs/heads/master/wine-quality.csv
   local_data_file: artifacts/data_ingestion/wine-quality.csv
+
+data_validation:
+  root_dir: "artifacts/data_validation"
+  data_file: "artifacts/data_ingestion/wine-quality.csv"
+  status_file: "artifacts/data_validation/status.json"

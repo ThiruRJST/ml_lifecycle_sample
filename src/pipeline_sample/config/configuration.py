@@ -1,5 +1,5 @@
 from src.pipeline_sample.constants import *
-from src.pipeline_sample.entity.config_entity import DataIngestionConfig
+from src.pipeline_sample.entity.config_entity import (DataIngestionConfig, DataValidationConfig)
 from src.pipeline_sample.utils.common import read_yaml, create_directories
 
 
@@ -27,3 +27,17 @@ class ConfigurationManager:
             local_data_file=Path(config.local_data_file)
         )
         
+    
+    def get_data_validation_config(self) -> DataValidationConfig:
+        
+        config = self.config.data_validation
+        schema = self.schema.COLUMNS
+        
+        data_validation_config = DataValidationConfig(
+            root_dir=Path(config.root_dir),
+            data_file=Path(config.data_file),
+            status_file=Path(config.status_file),
+            all_schema = schema
+        )
+        
+        return data_validation_config
